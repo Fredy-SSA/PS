@@ -9,7 +9,6 @@ Edit -> Create-New-VM-FromList.ps1 ->  C:\Base\Base19D-WS19-1809\Base19D-WS19-18
 Or
 Prepare the base line - Create a new Windows Server and prepare to be cloned with Sysprep and shutdown the VM
 Copy VHD in C:\Base\Base19D-WS19-1809\ rename to Base19D-WS19-1809.vhd  or edit in Create-New-VM-FromList.ps1 
-
 https://www.petri.com/using-syspre-windows-10
 
 Download sql setup iso  en_sql_server_2017_developer_x64_dvd_11296168.iso 
