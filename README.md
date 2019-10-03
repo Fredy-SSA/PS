@@ -2,20 +2,19 @@
 Create template VM's on Hyper-V with Powershell-Direct , Powershell DSC 
 
 In Progress
-
-
-##Prerequisite :
+Prerequisite:
 Edit  - >  ServerList.csv (In this momend just add new VM's if is needed)
 
-#Edit -> Create-New-VM-FromList.ps1 ->  C:\Base\Base19D-WS19-1809\Base19D-WS19-1809.vhd 
+Edit -> Create-New-VM-FromList.ps1 ->  C:\Base\Base19D-WS19-1809\Base19D-WS19-1809.vhd 
 Or
-#Prepare the base line - Create a new Windows Server and prepare to be cloned with Sysprep and shutdown the VM
+Prepare the base line - Create a new Windows Server and prepare to be cloned with Sysprep and shutdown the VM
 Copy VHD in C:\Base\Base19D-WS19-1809\ rename to Base19D-WS19-1809.vhd  or edit in Create-New-VM-FromList.ps1 
 
-#https://www.petri.com/using-syspre-windows-10
+https://www.petri.com/using-syspre-windows-10
 
-#Download sql setup iso  en_sql_server_2017_developer_x64_dvd_11296168.iso 
+Download sql setup iso  en_sql_server_2017_developer_x64_dvd_11296168.iso 
 copy in C:\Base\en_sql_server_2017_developer_x64_dvd_11296168.iso
+
 Run Install-DSCModule-on-Host.ps1 on Hyper-V Host
 
 
