@@ -1,0 +1,7 @@
+﻿VMName,IP,Role,Password,Domain
+DC-AD1,10.10.10.10,AD,Pa55w.rd,TSR.ro
+DFS-SRV1,10.10.10.15,DFS,Pa55w.rd,
+Repo-SRV1,10.10.10.22,Repo,Pa55w.rd,
+Web-SRV1,10.10.10.30,Web,Pa55w.rd,
+Sql-SRV1,10.10.10.40,Sql,Pa55w.rd,
+Test-SRV1,10.10.10.50,,Pa55w.rd,
