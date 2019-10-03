@@ -1,7 +1,8 @@
 # PS
 Create template VM's on Hyper-V with Powershell-Direct , Powershell DSC 
 
-In Progress
+# *Work in progress*
+
 Prerequisite:
 Edit  - >  **ServerList.csv** (In this momend just add new VM's if is needed)
 
