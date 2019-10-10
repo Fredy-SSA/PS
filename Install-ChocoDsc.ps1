@@ -2,7 +2,7 @@
 $User = $AD.Domain +"\Administrator"
 $Pass = $AD.Password
 $Domain = $AD.Domain
-$VMName = get-vm | Out-GridView -OutputMode Single 
+$VMName = get-vm | Out-GridView -OutputMode Multiple
 $VMName = ($VMName).name
 
 $DSRMPWord = ConvertTo-SecureString -String $Pass -AsPlainText -Force
@@ -24,7 +24,8 @@ function Install-MissingModule ($Module)
     
 }
 
-Install-PackageProvider -Name NuGet -Force -Confirm:$False
+
+Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Confirm:$False -Force 
 Install-MissingModule "cChoco"
 
 
@@ -50,8 +51,8 @@ Configuration SoftwarePackagesConfig {
             Name = "vscode"
             DependsOn = "[cChocoInstaller]InstallChocolatey"
         }
-         cChocoPackageInstaller "adobereader" {
-         Name = "adobereader"
+         cChocoPackageInstaller "7zip.install" {
+         Name = "7zip.install"
          DependsOn = "[cChocoInstaller]InstallChocolatey"
         }
     }
